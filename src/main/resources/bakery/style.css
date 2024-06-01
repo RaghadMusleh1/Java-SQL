@@ -1,0 +1,84 @@
+.button {
+    -fx-background-color: #5F9EA0;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    cursor: hand;
+  }
+  .button {
+    -fx-font-size: 14px; /* Adjust the font size as needed */
+}
+
+  .button:hover {
+    -fx-background-color: linear-gradient(to bottom, #5F9EA0, #6b9fd0);
+  }
+  
+  .button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #5F9EA0, #85ade6);
+  }
+  .separator {
+    -fx-background-color: #00000050;
+    
+  }
+
+  
+  #login {
+    -fx-background-color: #802f55;
+    -fx-text-fill: #f0ece5;
+    -fx-background-radius: 22;
+  }
+  
+  #loginPane .button:hover {
+    -fx-background-color: #5F9EA0;
+  }
+  
+  #loginPane .button:pressed {
+    -fx-background-color: #467779;
+  }
+  
+  .text-field {
+    -fx-prompt-text-fill: #afafb2;
+  }
+  
+  .table-cell {
+    -fx-alignment: CENTER;
+  }
+  
+  #BGMain {
+    -fx-background-color: linear-gradient(
+      to bottom right,
+      #0d2940,
+      #305c80,
+      #11283a
+    );
+  }
+  
+  #navbar Button {
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+  }
+  
+  #navbar .button:hover {
+    -fx-background-color: #ffeebda4;
+  }
+  
+  #navbar .button:pressed {
+    -fx-background-color: #6c5e34a4;
+  }
+  
+  #grid Button {
+    -fx-content-display: top;
+    -fx-background-radius: 22;
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+  }
+  
+  #grid .button:hover {
+    -fx-background-color: #ffeebda4;
+  }
+  
+  #grid .button:pressed {
+    -fx-background-color: #6c5e34a4;
+  }
+  

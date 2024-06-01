@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="902.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../login/login.jpg" />
+            </image>
+            <effect>
+                <GaussianBlur radius="30" />
+            </effect>
+        </ImageView>
+        <AnchorPane layoutX="0" layoutY="439" style="-fx-background-color: white;" prefHeight="300" prefWidth="300">
+            <children>
+
+                <Button layoutX = "5" layoutY = "25" prefHeight = "50" prefWidth = "68.75" text = "BS" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "78.75" layoutY = "25" prefHeight = "50" prefWidth = "68.75" text = "/"   style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "152.5" layoutY = "25" prefHeight = "50" prefWidth = "68.75" text = "*" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "226.25" layoutY = "25" prefHeight = "50" prefWidth = "68.75" text = "-" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "5" layoutY = "80" prefHeight = "50" prefWidth = "68.75" text = "7" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "78.75" layoutY = "80" prefHeight = "50" prefWidth = "68.75" text = "8"   style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "152.5" layoutY = "80" prefHeight = "50" prefWidth = "68.75" text = "9" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "226.25" layoutY = "80" prefHeight = "105" prefWidth = "68.75" text = "+" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "5" layoutY = "135" prefHeight = "50" prefWidth = "68.75" text = "4" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "78.75" layoutY = "135" prefHeight = "50" prefWidth = "68.75" text = "5"   style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "152.5" layoutY = "135" prefHeight = "50" prefWidth = "68.75" text = "6" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "226.25" layoutY = "190" prefHeight = "105" prefWidth = "68.75" text = "Enter" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "5" layoutY = "190" prefHeight = "50" prefWidth = "68.75" text = "1" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "78.75" layoutY = "190" prefHeight = "50" prefWidth = "68.75" text = "2"   style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "152.5" layoutY = "190" prefHeight = "50" prefWidth = "68.75" text = "3" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "5" layoutY = "245" prefHeight = "50" prefWidth = "142.5" text = "0" style = "-fx-background-color: rgb(226, 224, 212);" />
+                <Button layoutX = "152.5" layoutY = "245" prefHeight = "50" prefWidth = "68.75" text = "."   style = "-fx-background-color: rgb(226, 224, 212);" />
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="0" layoutY="0" style="-fx-background-color: white;" prefHeight="25" prefWidth="900">
+            <VBox layoutX="20" layoutY="0"  style = "-fx-background-color: black" prefHeight="25" prefWidth="100">
+                <Label text = "Seller" style = "-fx-font-size: 14px;"/>
+            </VBox>
+            <Label layoutX = "750" layoutY = "5" text = "Raghad Software" style = "-fx-background-color: black; -fx-pref-height: 7px; -fx-pref-width: 120px; -fx-font-size: 15px;"/>
+        </AnchorPane>
+        <AnchorPane layoutX = "0" layoutY = "43" style = "-fx-background-color: white;" prefHeight = "430" prefWidth = "300">
+            <Text layoutX = "10" layoutY = "10" text = "Seller"/>
+            <Text fx:id = "sellerRole" layoutX = "10" layoutY = "10" text = "Seller" />
+            <TableView fx:id="tableItems" layoutX="5" layoutY="63.0" prefHeight="350.0" prefWidth="290.0">
+                <columns>
+                    <TableColumn fx:id="itemTitle" prefWidth="125" text="Item" />
+                    <TableColumn fx:id="itemPrice" prefWidth="83" text="Price" />
+                    <TableColumn fx:id="itemQuantitiy" prefWidth="83" text="Quantity" />
+                </columns>
+            </TableView> 
+        </AnchorPane>
+        <AnchorPane layoutX = "301" layoutY = "55" prefHeight = "800" prefWidth = "800">
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                <top>
+                    <AnchorPane prefHeight="200.0" prefWidth="250.0" >
+                        <children>
+                            <Separator layoutX="3.0" layoutY="30.0" prefHeight="0.0" prefWidth="662.0" style="-fx-background-color: #00000050;" />
+                                <Text layoutX="10.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENUES:">
+                                    <font>
+                                        <Font name="Arial Bold" size="23.0" />
+                                    </font>
+                                </Text>
+                                <Button fx:id="menuBtn1" layoutX="10.0" layoutY="60.0" mnemonicParsing="false"  prefHeight="100.0" prefWidth="140.0" text="Nada's Combos" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Futura-Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="menuBtn2"  layoutX="154.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" text="Sweets" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Futura-Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="menuBtn3"  layoutX="298.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" text="" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Futura-Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="menuBtn4"  layoutX="442.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" text="Sides and Drinks" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Futura-Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                
+                            <Separator layoutX="3.0" layoutY="194.0" prefHeight="0.0" prefWidth="662.0" style="-fx-background-color: #00000050;" />
+                        </children>
+                    </AnchorPane>
+                </top>
+                <center>
+                    <AnchorPane layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="662.0" prefWidth="669.0" translateY="10.0" BorderPane.alignment="CENTER">
+                        
+                        <children>
+                            <Text strokeType="OUTSIDE"  layoutY = "20" layoutX = "10" strokeWidth="0.0" text="ITEMS:">
+                                <font>
+                                    <Font name="Arial Bold" size="23.0" />
+                                </font>
+                                
+                            </Text>
+                            <Button fx:id="itemBtn1"  layoutY = "30" layoutX = "10"  prefHeight="65.0" prefWidth="140.0"  visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn2"  layoutY = "30" layoutX = "154"  prefHeight="65.0" prefWidth="140.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn3"  layoutY = "30" layoutX = "298"  prefHeight="65.0" prefWidth="140.0"  visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn4"  layoutY = "30" layoutX = "442"  prefHeight="65.0" prefWidth="140.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn5"  layoutY = "100" layoutX = "10"  prefHeight="65.0" prefWidth="140.0"  visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn6"  layoutY = "100" layoutX = "154"  prefHeight="65.0" prefWidth="140.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn7"  layoutY = "100" layoutX = "298"  prefHeight="65.0" prefWidth="140.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn8"  layoutY = "100" layoutX = "442"  prefHeight="65.0" prefWidth="140.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                        </children>
+                        <Separator layoutX="3.0" layoutY="354.0" prefHeight="0.0" prefWidth="662.0" style="-fx-background-color: #00000050;" />
+                        <children>
+
+                            <Button fx:id="total"  layoutY = "364" layoutX = "10"  text ="total" prefHeight="50.0" prefWidth="150.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+
+                            <Button fx:id="correct"  layoutY = "364" layoutX = "200"  text ="correct" prefHeight="50.0" prefWidth="150.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+    
+                           
+                            <Text layoutX = "10" layoutY = "455" text = "Total Price: " wrappingWidth="198.5113410949707">
+                                <font>
+                                    <Font name="Arial Bold" size="23.0" />
+                                </font>
+                            </Text>
+                            <Text fx:id="totalPrice" layoutX="155.0" layoutY="455.0" strokeType="OUTSIDE"  text="0.0" wrappingWidth="98.5113410949707" >
+                                <font>
+                                    <Font name="Arial Bold" size="23.0" />
+                                </font>
+                            </Text>
+                            
+                        </children>
+                    </AnchorPane>
+                    
+                </center>
+            </BorderPane>
+        </AnchorPane>
+    </children>
+</AnchorPane>

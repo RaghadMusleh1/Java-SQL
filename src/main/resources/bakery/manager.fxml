@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bakery.managerController" stylesheets = "@style.css">
+    <children>
+        
+        <AnchorPane layoutX="0" layoutY="439" style="-fx-background-color: white;" prefHeight="300" prefWidth="300">
+            <children>
+
+                <Button fx:id = "BS"    onAction = "#BS"    layoutX = "5" layoutY = "25" prefHeight = "50" prefWidth = "68.75" text = "BS"  />
+                <Button fx:id = "div"   onAction = "#div"   layoutX = "78.75" layoutY = "25" prefHeight = "50" prefWidth = "68.75" text = "/"   />
+                <Button fx:id = "mul"   onAction = "#mul"   layoutX = "152.5" layoutY = "25" prefHeight = "50" prefWidth = "68.75" text = "*"  />
+                <Button fx:id = "minus" onAction = "#minus" layoutX = "226.25" layoutY = "25" prefHeight = "50" prefWidth = "68.75" text = "-"  />
+                <Button fx:id = "seven" onAction = "#seven" layoutX = "5" layoutY = "80" prefHeight = "50" prefWidth = "68.75" text = "7"  />
+                <Button fx:id = "eight" onAction = "#eight" layoutX = "78.75" layoutY = "80" prefHeight = "50" prefWidth = "68.75" text = "8"    />
+                <Button fx:id = "nine"  onAction = "#nine"  layoutX = "152.5" layoutY = "80" prefHeight = "50" prefWidth = "68.75" text = "9" />
+                <Button fx:id = "plus"  onAction = "#plus"  layoutX = "226.25" layoutY = "80" prefHeight = "105" prefWidth = "68.75" text = "+" />
+                <Button fx:id = "four"  onAction = "#four"  layoutX = "5" layoutY = "135" prefHeight = "50" prefWidth = "68.75" text = "4" />
+                <Button fx:id = "five"  onAction = "#five"  layoutX = "78.75" layoutY = "135" prefHeight = "50" prefWidth = "68.75" text = "5" />
+                <Button fx:id = "six"   onAction = "#six"   layoutX = "152.5" layoutY = "135" prefHeight = "50" prefWidth = "68.75" text = "6" />
+                <Button fx:id = "enter" onAction = "#Enter" layoutX = "226.25" layoutY = "190" prefHeight = "105" prefWidth = "68.75" text = "Enter" />
+                <Button fx:id = "One"   onAction = "#one"   layoutX = "5" layoutY = "190" prefHeight = "50" prefWidth = "68.75" text = "1" />
+                <Button fx:id = "two"   onAction = "#two"   layoutX = "78.75" layoutY = "190" prefHeight = "50" prefWidth = "68.75" text = "2"  />
+                <Button fx:id = "three" onAction = "#three" layoutX = "152.5" layoutY = "190" prefHeight = "50" prefWidth = "68.75" text = "3"/>
+                <Button fx:id = "zero"  onAction = "#zero"  layoutX = "5" layoutY = "245" prefHeight = "50" prefWidth = "142.5" text = "0"  />
+                <Button fx:id = "dot"   onAction = "#dot"   layoutX = "152.5" layoutY = "245" prefHeight = "50" prefWidth = "68.75" text = "."  />
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX = "0" layoutY = "0" prefHeight = "25" prefWidth = "900" style = "-fx-background-radius: 3 ; -fx-background-color: #5F9EA0">
+           
+            <Button fx:id="back" onAction="#back" layoutX="5" layoutY="0" prefHeight="16" prefWidth="80" text="Back" >
+            </Button>
+            <Label layoutX = "90" layoutY = "0" text = "Seller:">
+                <font>
+                    <Font name="Arial Bold" size="15.0" />
+                </font>
+            </Label>
+            <Text fx:id = "seller" layoutX = "140" layoutY = "15">
+                <font>
+                    <Font name="Arial Bold" size="15.0" />
+                </font>
+            </Text>
+            <Label layoutX = "770" layoutY = "0" text = "Raghad Software">
+                <font>
+                    <Font name="Arial Bold" size="15.0" />
+                </font>
+            </Label>
+        </AnchorPane>
+        <AnchorPane layoutX = "0" layoutY = "43" style = "-fx-background-color: white;" prefHeight = "420" prefWidth = "300">
+            <Text layoutX = "10" layoutY = "15" text = "Seller:">
+                <font>
+                    <Font name="Arial Bold" size="13.0" />
+                </font>
+            </Text>
+            <Text fx:id = "userName" layoutX = "70" layoutY = "15" >
+                <font>
+                    <Font name="Arial Bold" size="13.0" />
+                </font>
+            </Text>
+
+            <Text layoutX = "10" layoutY = "35" text = "Role:">
+                <font>
+                    <Font name="Arial Bold" size="13.0" />
+                </font>
+            </Text>
+            <Text fx:id = "sellerRole" layoutX = "70" layoutY = "35" >
+                <font>
+                    <Font name="Arial Bold" size="13.0" />
+                </font>
+            </Text>
+            <TableView fx:id="tableItems" layoutX="5" layoutY="58.0" prefHeight="350.0" prefWidth="290.0">
+                <columns>
+                    <TableColumn fx:id="itemTitle" prefWidth="125" text="Item" />
+                    <TableColumn fx:id="itemPrice" prefWidth="83" text="Price" />
+                    <TableColumn fx:id="itemQuantity" prefWidth="83" text="Quantity" />
+                </columns>
+            </TableView> 
+        </AnchorPane>
+        <AnchorPane layoutX = "301" layoutY = "55" prefHeight = "800" prefWidth = "800">
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                <top>
+                    <AnchorPane prefHeight="200.0" prefWidth="250.0" >
+                        <children>
+                            <Separator layoutX="3.0" layoutY="30.0" prefHeight="0.0" prefWidth="662.0" style="-fx-background-color: #00000050;" />
+                                <Text layoutX="10.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENUES:">
+                                    <font>
+                                        <Font name="Arial Bold" size="23.0" />
+                                    </font>
+                                </Text>
+                                <Button fx:id="menuBtn1" onAction = "#menuOne" layoutX="10.0" layoutY="60.0" mnemonicParsing="false"  prefHeight="100.0" prefWidth="140.0" text="Nada" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Futura-Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="menuBtn2" onAction = "#menuTwo" layoutX="154.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" text="Sweets" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Futura-Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="menuBtn3"  onAction = "#menuThree" layoutX="298.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" text="" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Futura-Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="menuBtn4"  onAction = "#menuFour" layoutX="442.0" layoutY="60.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" text="Sides and Drinks" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Futura-Bold" size="18.0" />
+                                    </font>
+                                </Button>
+                                
+                            <Separator layoutX="3.0" layoutY="194.0" prefHeight="0.0" prefWidth="662.0" style="-fx-background-color: #00000050;" />
+                        </children>
+                    </AnchorPane>
+                </top>
+                <center>
+                    <AnchorPane layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="662.0" prefWidth="669.0" translateY="10.0" BorderPane.alignment="CENTER">
+                        
+                        <children>
+                            <Text strokeType="OUTSIDE"  layoutY = "20" layoutX = "10" strokeWidth="0.0" text="ITEMS:">
+                                <font>
+                                    <Font name="Arial Bold" size="23.0" />
+                                </font>
+                                
+                            </Text>
+                            <Button fx:id="itemBtn1"  onAction = "#itemBtnPressed" layoutY = "30" layoutX = "10"  prefHeight="65.0" prefWidth="140.0"  visible="false" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn2"  onAction = "#itemBtnPressed" layoutY = "30" layoutX = "154"  prefHeight="65.0" prefWidth="140.0" visible="false" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn3"  onAction = "#itemBtnPressed" layoutY = "30" layoutX = "298"  prefHeight="65.0" prefWidth="140.0"  visible="false" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn4"  onAction = "#itemBtnPressed" layoutY = "30" layoutX = "442"  prefHeight="65.0" prefWidth="140.0" visible="false" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn5"  onAction = "#itemBtnPressed" layoutY = "100" layoutX = "10"  prefHeight="65.0" prefWidth="140.0"  visible="false" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn6"  onAction = "#itemBtnPressed" layoutY = "100" layoutX = "154"  prefHeight="65.0" prefWidth="140.0" visible="false" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn7"  onAction = "#itemBtnPressed" layoutY = "100" layoutX = "298"  prefHeight="65.0" prefWidth="140.0" visible="false" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="itemBtn8"  onAction = "#itemBtnPressed" layoutY = "100" layoutX = "442"  prefHeight="65.0" prefWidth="140.0" visible="false" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                        </children>
+                        <Separator layoutX="3.0" layoutY="354.0" prefHeight="0.0" prefWidth="662.0" style="-fx-background-color: #00000050;" />
+                        <children>
+                            <Button fx:id="total"  onAction = "#total" layoutY = "364" layoutX = "10"  text ="total" prefHeight="50.0" prefWidth="100.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+
+                            <Button fx:id="correct"  onAction = "#correct" layoutY = "364" layoutX = "115"  text ="Correct" prefHeight="50.0" prefWidth="100.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+
+                            <Button fx:id="Chart"  layoutY = "364" layoutX = "225"  text ="Charts" prefHeight="50.0" prefWidth="100.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+
+                            <Button fx:id="editOrders"  onAction = "#editOrders" layoutY = "364" layoutX = "335"  text ="Edit Orders" prefHeight="50.0" prefWidth="100.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Button fx:id="cashDrawer"  layoutY = "364" layoutX = "445"  text ="cash Drawer" prefHeight="50.0" prefWidth="100.0" visible="true" >
+                                <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                </font>
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </Button>
+                            <Text layoutX = "10" layoutY = "455" text = "Total Price: " wrappingWidth="198.5113410949707">
+                                <font>
+                                    <Font name="Arial Bold" size="23.0" />
+                                </font>
+                            </Text>
+                            <Text fx:id="totalPrice" layoutX="155.0" layoutY="455.0" strokeType="OUTSIDE"  text="0.0" wrappingWidth="98.5113410949707" >
+                                <font>
+                                    <Font name="Arial Bold" size="23.0" />
+                                </font>
+                            </Text>
+                            
+                        </children>
+                    </AnchorPane>
+                    
+                </center>
+            </BorderPane>
+        </AnchorPane>
+    </children>
+</AnchorPane>
